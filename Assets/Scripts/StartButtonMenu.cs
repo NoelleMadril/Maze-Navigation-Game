@@ -5,9 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class StartButtonMenu : MonoBehaviour
 {
-  public void Play()
-    {
-        SceneManager.LoadScene(0);
-    }
+  public void play()
+  {
+        SceneManager.LoadScene("SceneNameHere");
+  }
 
+    public void LoadNextInBuild()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex * 1);
+
+    }
 }
