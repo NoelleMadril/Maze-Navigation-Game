@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 public class StartButtonMenu : MonoBehaviour
 {
 
-    public void switchScenes(string sceneName)
+    public void switchScenes(string LEVEL1)
     {
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene(LEVEL1);
     }
 
   
