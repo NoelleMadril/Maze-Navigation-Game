@@ -3,24 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Wincon : MonoBehaviour
+public class WinconEnd : MonoBehaviour
 {
     public Transform winPoint;
     public float winDist = 1.0f;
     // reference to player
     public Transform player;
     // scene to load
-    public string sceneToLoad = "LEVEL2";
+    public string sceneToLoad = "WinScreen";
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 winPoint = new Vector3(11.01f, 8.23f, 172.5f);
+        Vector3 winPoint = new Vector3(4.86f, 1.55f, -11.9f);
         float distToWin = Vector3.Distance(player.position, winPoint);
         if(distToWin <= winDist)
         {
-            Debug.Log("Player reached win point, loading scene...");
-            SceneManager.LoadScene("LEVEL2");
+            Debug.Log("WinpointEnd reached");
+            SceneManager.LoadScene("WinScreen");
         }
         else
         {
